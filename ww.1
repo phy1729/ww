@@ -1,0 +1,18 @@
+.Dd February 20, 2020
+.Dt WW 1
+.Os
+.Sh NAME
+.Nm ww
+.Nd WINCH wrapper
+.Sh SYNOPSIS
+.Nm
+.Ar command
+.Op Ar args
+.Sh DESCRIPTION
+The
+.Nm
+utility executes the given command under a wrapper that ignores SIGWINCH and passes all other signals.
+.Sh EXIT STATUS
+The
+.Nm
+utility exits 1 on error and otherwise with the same status as the wrapped command.
